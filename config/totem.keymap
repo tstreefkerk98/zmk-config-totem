@@ -30,38 +30,7 @@
 };
 
 / {
-    macros {
-        colon_sp: colon_sp {
-            label = "COLON_SPACE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &kp COLON
-                &kp SPACE
-            >;
-        };
-        equals_sp: equals_sp {
-            label = "EQUALS_SPACE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &kp SPACE
-                &kp EQUALS
-                &kp SPACE
-            >;
-        };
-        arrow_sp: arrow_sp {
-            label = "ARROW_SPACE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-                &kp SPACE
-                &kp MINUS
-                &kp GT
-                &kp SPACE
-            >;
-        };
-    };
+
 
         keymap {
                 compatible = "zmk,keymap";
@@ -159,9 +128,9 @@ label= "SYM2"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &kp AMPS    &kp ASTRK   &kp TILDE   &colon_sp       &kp F12     &kp F7      &kp F8      &kp F9      &trans
-                &kp LALT    &kp DLLR    &kp PRCNT   &kp CARET   &equals_sp      &kp F11     &kp F4      &kp F5      &kp F6      &kp RALT
-    &trans      &kp LCTRL   &kp EXCL    &kp AT      &kp HASH    &arrow_sp       &kp F10     &kp F1      &kp F2      &kp F3      &kp RCTRL &kp RSHFT
+                &trans      &kp AMPS    &kp ASTRK   &kp TILDE   &trans       &kp F12     &kp F7      &kp F8      &kp F9      &trans
+                &kp LALT    &kp DLLR    &kp PRCNT   &kp CARET   &trans      &kp F11     &kp F4      &kp F5      &kp F6      &kp RALT
+    &trans      &kp LCTRL   &kp EXCL    &kp AT      &kp HASH    &trans       &kp F10     &kp F1      &kp F2      &kp F3      &kp RCTRL &kp RSHFT
                                         &trans      &trans      &trans          &trans      &trans      &trans
                         >;
                 };
