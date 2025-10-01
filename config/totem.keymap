@@ -35,8 +35,6 @@
     macros {
         colon_sp: colon_sp {
             label = "COLON_SPACE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
             bindings = <
                 &kp COLON
                 &kp SPACE
@@ -44,8 +42,6 @@
         };
         equals_sp: equals_sp {
             label = "EQUALS_SPACE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
             bindings = <
                 &kp SPACE
                 &kp EQUALS
@@ -54,8 +50,6 @@
         };
         arrow_sp: arrow_sp {
             label = "ARROW_SPACE";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
             bindings = <
                 &kp SPACE
                 &kp MINUS
