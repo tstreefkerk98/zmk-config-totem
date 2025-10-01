@@ -104,7 +104,7 @@ label= "SYM1"                              ;
 // ╷           ╷                 ╷             ╷           ╷            ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp GRAVE         &kp LS(MINUS) &kp PLUS    &kp LBKT     &kp RBKT        &trans      &kp KP_N7   &kp KP_N8   &kp KP_N9   &trans
-                &mt LALT LS(APOS) &kp MINUS     &kp EQUAL   &kp LPAR     &kp RPAR        &trans      &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp RALT
+                &mt LALT DQT      &kp MINUS     &kp EQUAL   &kp LPAR     &kp RPAR        &trans      &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp RALT
     &kp LSHFT   &mt LCTRL APOS    &kp BSLH      &kp PIPE    &kp LS(LBKT) &kp LS(RBKT)    &trans      &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp RCTRL   &kp RSHFT
                                                 &trans      &trans       &trans          &trans      &kp KP_N0   &trans
                         >;
