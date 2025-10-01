@@ -57,6 +57,7 @@
                 &kp SPACE
             >;
         };
+    }
 
         keymap {
                 compatible = "zmk,keymap";
