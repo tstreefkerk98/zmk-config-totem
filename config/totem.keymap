@@ -136,10 +136,10 @@ label= "SYM1"                              ;
  bindings = <
 // ╷           ╷                 ╷             ╷           ╷            ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp GRAVE         &kp LS(MINUS) &kp PLUS    &kp LBKT     &kp RBKT        &trans      &kp KP_N7   &kp KP_N8   &kp KP_N9   &trans
-                &mt LALT DQT      &kp MINUS     &kp EQUAL   &kp LPAR     &kp RPAR        &trans      &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp RALT
-    &kp LSHFT   &mt LCTRL APOS    &kp BSLH      &kp PIPE    &kp LS(LBKT) &kp LS(RBKT)    &trans      &kp KP_N1   &kp KP_N2   &kp KP_N3   &kp RCTRL   &kp RSHFT
-                                                &trans      &trans       &trans          &trans      &kp KP_N0   &trans
+                &kp GRAVE         &kp LS(MINUS) &kp PLUS    &kp LBKT     &kp RBKT        &trans      &kp 7       &kp 8       &kp 9       &trans
+                &mt LALT DQT      &kp MINUS     &kp EQUAL   &kp LPAR     &kp RPAR        &trans      &kp 4       &kp 5       &kp 6       &kp RALT
+    &kp LSHFT   &mt LCTRL APOS    &kp BSLH      &kp PIPE    &kp LS(LBKT) &kp LS(RBKT)    &trans      &kp 1       &kp 2       &kp 3       &kp RCTRL   &kp RSHFT
+                                                &trans      &trans       &trans          &trans      &kp 0       &trans
                         >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -162,7 +162,7 @@ label= "SYM2"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &trans      &kp AMPS    &kp LS(N8)  &kp TILDE   &colon_sp       &kp F12     &kp F7      &kp F8      &kp F9      &trans
-                &kp LALT    &kp LS(N4)  &kp PRCNT   &kp CARET   &equal_sp      &kp F11     &kp F4      &kp F5      &kp F6      &kp RALT
+                &kp LALT    &kp LS(N4)  &kp PRCNT   &kp CARET   &equal_sp       &kp F11     &kp F4      &kp F5      &kp F6      &kp RALT
     &trans      &kp LCTRL   &kp EXCL    &kp AT      &kp HASH    &arrow_sp       &kp F10     &kp F1      &kp F2      &kp F3      &kp RCTRL &kp RSHFT
                                         &trans      &trans      &trans          &trans      &trans      &trans
                         >;
