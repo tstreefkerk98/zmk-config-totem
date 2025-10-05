@@ -33,13 +33,13 @@
 
 / {
     behaviors {
-        ht: ht {
+        ht: high_delay_mod_tap {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            label = "HT_250";
-            tapping-term-ms = <250>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
+            tapping-term-ms = <300>;
             bindings = <&kp>, <&kp>;
+            display-name = "High-Delay-Mod-Tap";
         };
     };
     macros {
