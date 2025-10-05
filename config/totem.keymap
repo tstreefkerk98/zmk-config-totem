@@ -80,7 +80,7 @@ label= "BASE"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃ LSHFT TAB ┃  LCTRL Z  ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃  RCTRL /  ┃ RSHFT ESC ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃   ENTER   ┃    BSPC   ┃   SYM2    ┃   ┃   RSHIFT  ┃ NAV SPACE ┃   SYM1    ┃
+//                                     ┃   ENTER   ┃    BSPC   ┃   SYM1    ┃   ┃   RSHIFT  ┃ NAV SPACE ┃   SYM2    ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷             ╷           ╷           ╷              ╷           ╷
@@ -88,7 +88,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &mt RGUI T      &mt LGUI Y  &kp U         &kp I       &kp O       &kp P
                 &mt LALT A  &kp S       &kp D       &kp F       &kp G           &kp H       &kp J         &kp K       &kp L       &mt RALT SEMI
  &mt LSHIFT TAB &mt LCTRL Z &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &mt RCTRL FSLH &mt RSHIFT ESC
-                                        &kp ENTER   &kp BSPC    &mo 3           &kp RSHFT  &lt 1 SPACE    &mo 2
+                                        &kp ENTER   &kp BSPC    &mo SYM1        &kp RSHFT   &lt NAV SPACE &mo SYM2
                         >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -136,10 +136,10 @@ label= "SYM1"                              ;
  bindings = <
 // ╷           ╷                 ╷             ╷           ╷            ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp GRAVE         &kp LS(MINUS) &kp PLUS    &kp LBKT     &kp RBKT        &trans      &kp 7       &kp 8       &kp 9       &trans
-                &mt LALT DQT      &kp MINUS     &kp EQUAL   &kp LPAR     &kp RPAR        &trans      &kp 4       &kp 5       &kp 6       &kp RALT
-    &kp LSHFT   &mt LCTRL APOS    &kp BSLH      &kp PIPE    &kp LS(LBKT) &kp LS(RBKT)    &trans      &kp 1       &kp 2       &kp 3       &kp RCTRL   &kp RSHFT
-                                                &trans      &trans       &trans          &trans      &kp 0       &trans
+                &kp GRAVE         &kp LS(MINUS) &kp PLUS    &kp LBKT     &kp RBKT        &trans      &kp N7      &kp N8      &kp N9      &trans
+                &mt LALT DQT      &kp MINUS     &kp EQUAL   &kp LPAR     &kp RPAR        &trans      &kp N4      &kp N5      &kp N6      &kp RALT
+    &kp LSHFT   &mt LCTRL APOS    &kp BSLH      &kp PIPE    &kp LS(LBKT) &kp LS(RBKT)    &trans      &kp N1      &kp N2      &kp N3      &kp RCTRL   &kp RSHFT
+                                                &trans      &trans       &trans          &trans      &kp N0      &trans
                         >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
