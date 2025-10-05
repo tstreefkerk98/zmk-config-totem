@@ -113,7 +113,7 @@ label= "NAV"                              ;
                 &trans      &mkp LCLK      &mmv MOVE_UP    &mkp RCLK       &msc SCRL_UP       &kp LS(LC(UP))   &kp HOME         &kp UP    &kp END           &trans
                 &kp LALT    &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_DOWN     &kp LS(LC(DOWN)) &kp LEFT         &kp DOWN  &kp RIGHT         &kp RALT
     &kp LSHFT   &kp LCTRL   &msc SCRL_LEFT &mkp MCLK       &msc SCRL_RIGHT &kp LS(LG(LEFT))   &kp DEL          &kp LC(LA(LEFT)) &kp LC(B) &kp LC(LA(RIGHT)) &kp RCTRL  &kp RSHFT
-                                           &trans          &trans          &trans             &trans           &trans           &tog 4
+                                           &trans          &trans          &trans             &trans           &trans           &tog BT
                         >;
                 };
 
