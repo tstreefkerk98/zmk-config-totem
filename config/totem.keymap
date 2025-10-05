@@ -173,7 +173,7 @@ label= "SYM2"                              ;
 
                 &none       &kp AMPS    &kp LS(N8)  &kp TILDE   &colon_sp       &kp F12     &kp F7      &kp F8      &kp F9      &none
                 &kp LALT    &kp LS(N4)  &kp PRCNT   &kp CARET   &equal_sp       &kp F11     &kp F4      &kp F5      &kp F6      &kp RALT
-    &LCTRL      &none       &kp EXCL    &kp AT      &kp HASH    &arrow_sp       &kp F10     &kp F1      &kp F2      &kp F3      &none       &kp RCTRL
+    &kp LCTRL   &none       &kp EXCL    &kp AT      &kp HASH    &arrow_sp       &kp F10     &kp F1      &kp F2      &kp F3      &none       &kp RCTRL
                                         &trans      &trans      &kp RSHFT       &none       &none       &none
                         >;
                 };
