@@ -35,7 +35,8 @@
     behaviors {
         ht: ht {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_250";
+            #binding-cells = <0>;
+            label = "HT_250";
             tapping-term-ms = <250>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
