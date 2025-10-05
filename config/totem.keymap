@@ -32,6 +32,15 @@
 };
 
 / {
+    behaviors {
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_250";
+            tapping-term-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
     macros {
         colon_sp: colon_sp {
             compatible = "zmk,behavior-macro";
@@ -86,8 +95,8 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷             ╷           ╷           ╷              ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &mt RGUI T      &mt LGUI Y  &kp U         &kp I       &kp O       &kp P
-                &mt LALT A  &kp S       &kp D       &kp F       &kp G           &kp H       &kp J         &kp K       &kp L       &mt RALT SEMI
- &mt LSHIFT TAB &mt LCTRL Z &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &mt RCTRL FSLH &mt RSHIFT ESC
+                &ht LALT A  &kp S       &kp D       &kp F       &kp G           &kp H       &kp J         &kp K       &kp L       &ht RALT SEMI
+ &ht LSHIFT TAB &ht LCTRL Z &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &ht RCTRL FSLH &ht RSHIFT ESC
                                         &kp ENTER   &kp BSPC    &mo SYM1        &kp RSHFT   &lt NAV SPACE &mo SYM2
                         >;
                 };
@@ -137,8 +146,8 @@ label= "SYM1"                              ;
 // ╷           ╷                 ╷             ╷           ╷            ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp GRAVE         &kp LS(MINUS) &kp PLUS    &kp LBKT     &kp RBKT        &trans      &kp N7      &kp N8      &kp N9      &trans
-                &mt LALT DQT      &kp MINUS     &kp EQUAL   &kp LPAR     &kp RPAR        &trans      &kp N4      &kp N5      &kp N6      &kp RALT
-    &kp LSHFT   &mt LCTRL APOS    &kp BSLH      &kp PIPE    &kp LS(LBKT) &kp LS(RBKT)    &trans      &kp N1      &kp N2      &kp N3      &kp RCTRL   &kp RSHFT
+                &ht LALT DQT      &kp MINUS     &kp EQUAL   &kp LPAR     &kp RPAR        &trans      &kp N4      &kp N5      &kp N6      &kp RALT
+    &kp LSHFT   &ht LCTRL APOS    &kp BSLH      &kp PIPE    &kp LS(LBKT) &kp LS(RBKT)    &trans      &kp N1      &kp N2      &kp N3      &kp RCTRL   &kp RSHFT
                                                 &trans      &trans       &trans          &trans      &kp N0      &trans
                         >;
                 };
