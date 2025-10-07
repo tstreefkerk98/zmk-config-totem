@@ -95,14 +95,14 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷             ╷           ╷           ╷              ╷           ╷
 
-                &kp Q       &kp W       &kp E       &kp R       &mt RGUI T      &mt LGUI Y  &kp U         &kp I       &kp O       &kp P
+                &kp Q       &kp W       &kp E       &kp R       &ht RGUI T      &ht LGUI Y  &kp U         &kp I       &kp O       &kp P
                 &ht LALT A  &kp S       &kp D       &kp F       &kp G           &kp H       &kp J         &kp K       &kp L       &ht RALT SEMI
  &ht LCTRL TAB  &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M         &kp COMMA   &kp DOT     &kp FSLH       &ht RCTRL ESC
                                         &kp ENTER   &kp BSPC    &mo SYM1        &kp RSHFT   &lt NAV SPACE &mo SYM2
                         >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
+b
 
                 navi_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
