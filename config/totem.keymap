@@ -54,7 +54,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <170>;
-            bindings = <&kp LCTL>, <&mkp LCLK>;
+            bindings = <&kp LCTRL>, <&mkp LCLK>;
             display-name = "Ctrl-Click";
         };
     };
