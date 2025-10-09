@@ -131,7 +131,7 @@ label= "NAV"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    TAB    ┃     '     ┃     \     ┃     |     ┃     {     ┃     }     ┃   ┃    DEL    ┃    BACK   ┃   CTRL B  ┃  FORWARD  ┃           ┃    ESC    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃           ┃     *     ┃    BT     ┃   ┃   RSHIFT  ┃    BSPC   ┃   ENTER   ┃
+//                                     ┃           ┃     *     ┃           ┃   ┃   RSHIFT  ┃    BSPC   ┃   ENTER   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷            ╷               ╷              ╷              ╷           ╷  ╷                ╷                ╷         ╷                 ╷           ╷           ╷
@@ -139,7 +139,7 @@ label= "NAV"                              ;
                 &kp GRAVE    &kp LS(MINUS)   &kp PLUS       &kp LBKT       &kp RBKT       &kp LS(LA(UP))   &kp HOME         &kp UP    &kp END           &none
                 &ht LALT DQT &ht LCTRL MINUS &ht LGUI EQUAL &kp LPAR       &kp RPAR       &kp LS(LA(DOWN)) &kp LEFT         &kp DOWN  &kp RIGHT         &none
     &trans      &kp APOS     &kp BSLH        &kp PIPE       &kp LS(LBKT)   &kp LS(RBKT)   &kp DEL          &kp LC(LA(LEFT)) &kp LC(B) &kp LC(LA(RIGHT)) &none       &trans
-                                             &none          &none          &tog BT        &trans           &trans           &trans
+                                             &none          &none          &none          &trans           &trans           &trans
                         >;
                 };
 
@@ -153,9 +153,9 @@ label= "SYM1"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃     &     ┃     *     ┃     ~     ┃    ': '   ┃   ┃           ┃     7     ┃     8     ┃     9     ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃   LALT    ┃  LCTRL $  ┃  LGUI %   ┃     ^     ┃   ' = '   ┃   ┃           ┃     4     ┃     5     ┃     6     ┃           ┃
+//             ┃   LALT    ┃  LCTRL $  ┃  LGUI %   ┃     ^     ┃   ' = '   ┃   ┃     -     ┃     4     ┃     5     ┃     6     ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    TAB    ┃           ┃     !     ┃     @     ┃     #     ┃   ' -> '  ┃   ┃     -     ┃     1     ┃     2     ┃     3     ┃           ┃    ESC    ┃
+// ┃    TAB    ┃           ┃     !     ┃     @     ┃     #     ┃   ' -> '  ┃   ┃           ┃     1     ┃     2     ┃     3     ┃           ┃    ESC    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃     *     ┃   ┃  RSHFT ,  ┃     0     ┃     .     ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -163,8 +163,8 @@ label= "SYM1"                              ;
 // ╷           ╷           ╷                ╷              ╷           ╷             ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &none       &kp AMPS         &kp LS(N8)     &kp TILDE   &colon_sp     &none       &kp N7      &kp N8      &kp N9      &none
-                &kp LALT    &ht LCTRL LS(N4) &ht LGUI PRCNT &kp CARET   &equal_sp     &none       &kp N4      &kp N5      &kp N6      &none
-    &trans      &none       &kp EXCL         &kp AT         &kp HASH    &arrow_sp     &kp MINUS   &kp N1      &kp N2      &kp N3      &none       &trans
+                &kp LALT    &ht LCTRL LS(N4) &ht LGUI PRCNT &kp CARET   &equal_sp     &kp MINUS   &kp N4      &kp N5      &kp N6      &none
+    &trans      &none       &kp EXCL         &kp AT         &kp HASH    &arrow_sp     &none       &kp N1      &kp N2      &kp N3      &none       &trans
                                              &none          &none       &none     &mt RSHFT COMMA &kp N0      &kp DOT
                         >;
                 };
@@ -182,7 +182,7 @@ label= "SYM2"                              ;
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    TAB    ┃           ┃   SCRL_L  ┃   MCLK    ┃  SCRL_R   ┃SHFT_GUI_L ┃   ┃    F10    ┃    F1     ┃     F2    ┃     F3    ┃           ┃    ESC    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                     ┃     *     ┃           ┃           ┃   ┃   RSHIFT  ┃    BSPC   ┃   ENTER   ┃
+//                                     ┃     *     ┃           ┃    BT     ┃   ┃   RSHIFT  ┃    BSPC   ┃   ENTER   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷              ╷               ╷               ╷               ╷    ╷           ╷           ╷           ╷           ╷           ╷          ╷           ╷
@@ -190,7 +190,7 @@ label= "SYM2"                              ;
                 &none       &mmv MOVE_LEFT &mmv MOVE_UP    &mmv MOVE_RIGHT &msc SCRL_UP         &kp F12     &kp F7      &kp F8      &kp F9      &none
                 &kp LALT    &cc LCTRL LCLK &mmv MOVE_DOWN  &mkp RCLK       &msc SCRL_DOWN       &kp F11     &kp F4      &kp F5      &kp F6      &none
     &trans      &none       &msc SCRL_LEFT &mkp MCLK       &msc SCRL_RIGHT &kp LS(LG(LEFT))     &kp F10     &kp F1      &kp F2      &kp F3      &none       &trans
-                                           &none           &none           &none                &trans      &trans      &trans
+                                           &none           &none           &tog BT              &trans      &trans      &trans
                         >;
                 };
 
