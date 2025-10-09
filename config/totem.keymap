@@ -165,7 +165,7 @@ label= "SYM1"                              ;
                 &none       &kp AMPS         &kp LS(N8)     &kp TILDE   &colon_sp     &none       &kp N7      &kp N8      &kp N9      &none
                 &kp LALT    &ht LCTRL LS(N4) &ht LGUI PRCNT &kp CARET   &equal_sp     &kp MINUS   &kp N4      &kp N5      &kp N6      &none
     &trans      &none       &kp EXCL         &kp AT         &kp HASH    &arrow_sp     &none       &kp N1      &kp N2      &kp N3      &none       &trans
-                                             &tog SYM1      &none       &none     &mt RSHFT COMMA &kp N0      &kp DOT
+                                             &latch SYM1    &none       &none     &mt RSHFT COMMA &kp N0      &kp DOT
                         >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
