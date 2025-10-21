@@ -154,7 +154,7 @@ label= "NAV"                              ;
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃     `     ┃     _     ┃     +     ┃     [     ┃     ]     ┃   ┃  PAGE_UP  ┃    HOME   ┃     UP    ┃    END    ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃     "     ┃   LALT -  ┃  LCTRL =  ┃  LGUI (   ┃     )     ┃   ┃ PAGE_DOWN ┃    LEFT   ┃    DOWN   ┃   RIGHT   ┃     K     ┃
+//             ┃     "     ┃   LALT -  ┃  LCTRL =  ┃  LGUI (   ┃     )     ┃   ┃ PAGE_DOWN ┃    LEFT   ┃    DOWN   ┃   RIGHT   ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃    TAB    ┃     '     ┃     \     ┃     |     ┃     {     ┃     }     ┃   ┃    DEL    ┃    BACK   ┃DECLARATION┃  FORWARD  ┃           ┃    ESC    ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -164,7 +164,7 @@ label= "NAV"                              ;
 // ╷           ╷            ╷               ╷              ╷              ╷           ╷  ╷                ╷                ╷              ╷                 ╷           ╷           ╷
 
                 &kp GRAVE    &kp LS(MINUS)   &kp PLUS        &kp LBKT       &kp RBKT       &kp PAGE_UP      &kp HOME         &kp UP        &kp END           &none
-                &kp DQT      &ht LALT MINUS  &ht LCTRL EQUAL &ht LGUI LPAR  &kp RPAR       &kp PAGE_DOWN    &kp LEFT         &kp DOWN      &kp RIGHT         &kp K
+                &kp DQT      &ht LALT MINUS  &ht LCTRL EQUAL &ht LGUI LPAR  &kp RPAR       &kp PAGE_DOWN    &kp LEFT         &kp DOWN      &kp RIGHT         &none
     &trans      &kp APOS     &kp BSLH        &kp PIPE        &kp LS(LBKT)   &kp LS(RBKT)   &kp DEL          &kp LA(LEFT)     &kp LA(F12)   &kp LA(RIGHT)     &none       &trans
                                              &none           &none          &none          &kp RSHFT        &trans           &kp RS(ENTER)
                         >;
