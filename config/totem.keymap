@@ -41,37 +41,15 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <225>;
             bindings = <&kp>, <&kp>;
             display-name = "High-Delay-Mod-Tap";
-        };
-        llt: low_delay_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <100>;
-            bindings = <&mo>, <&kp>;
-            display-name = "Low-Delay-Mod-Tap";
-        };
-        cc: ctrl_click {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-            bindings = <&kp>, <&mkp>;
-            display-name = "High-Delay-Ctrl-Click";
         };
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <225>;
             bindings = <&kp RSHFT>, <&mo SYM3>;
-        };
-        td1: tap_dance_1 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&llt SYM1_TEMP LA(FSLH)>, <&kp LC(K)>;
         };
     };
     macros {
@@ -131,17 +109,17 @@ label= "BASE"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     A     ┃  LALT S   ┃  LCTRL D  ┃  LGUI F   ┃     G     ┃   ┃     H     ┃   RGUI J  ┃  RCTRL K  ┃  RALT L   ┃     ;     ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    TAB    ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃    ESC    ┃
+// ┃ LA(FSLH)  ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     N     ┃     M     ┃     ,     ┃     .     ┃     /     ┃ LS(LA(F)) ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
-//                                  ┃SYM2 LS(LA(F))┃ NAV SPACE ┃S1 A(/)|C(K)┃  ┃RSHIFT|SYM3┃    BSPC   ┃   ENTER   ┃
+//                                     ┃ SYM2 TAB  ┃ NAV SPACE ┃ SYM1 ESC  ┃   ┃RSHIFT|SYM3┃    BSPC   ┃   ENTER   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷      ╷           ╷             ╷           ╷           ╷              ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T              &kp Y       &kp U         &kp I       &kp O       &kp P
                 &kp A       &ht LALT S  &ht LCTRL D &ht LGUI F  &kp G              &kp H       &ht RGUI J    &ht RCTRL K &ht RALT L  &kp SEMI
- &kp TAB        &kp Z       &kp X       &kp C       &kp V       &kp B              &kp N       &kp M         &kp COMMA   &kp DOT     &kp FSLH       &kp ESC
-                            &llt SYM2 LS(LA(F))   &lt NAV SPACE &td1               &td0        &kp BSPC      &kp ENTER
+ &kp LA(FSLH)   &kp Z       &kp X       &kp C       &kp V       &kp B              &kp N       &kp M         &kp COMMA   &kp DOT     &kp FSLH       &kp LS(LA(F))
+                                     &lt SYM2 TAB &lt NAV SPACE &lt SYM1_TEMP ESC  &td0        &kp BSPC      &kp ENTER
                         >;
                 };
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
@@ -156,7 +134,7 @@ label= "NAV"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃     "     ┃   LALT -  ┃  LCTRL =  ┃  LGUI (   ┃     )     ┃   ┃ PAGE_DOWN ┃    LEFT   ┃    DOWN   ┃   RIGHT   ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    TAB    ┃     '     ┃     \     ┃     |     ┃     {     ┃     }     ┃   ┃    DEL    ┃    BACK   ┃DECLARATION┃  FORWARD  ┃           ┃    ESC    ┃
+// ┃           ┃     '     ┃     \     ┃     |     ┃     {     ┃     }     ┃   ┃    DEL    ┃    BACK   ┃DECLARATION┃  FORWARD  ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃     *     ┃           ┃   ┃   RSHIFT  ┃    BSPC   ┃SHFT ENTER ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -165,7 +143,7 @@ label= "NAV"                              ;
 
                 &kp GRAVE    &kp LS(MINUS)   &kp PLUS        &kp LBKT       &kp RBKT       &kp PAGE_UP      &kp HOME         &kp UP        &kp END           &none
                 &kp DQT      &ht LALT MINUS  &ht LCTRL EQUAL &ht LGUI LPAR  &kp RPAR       &kp PAGE_DOWN    &kp LEFT         &kp DOWN      &kp RIGHT         &none
-    &trans      &kp APOS     &kp BSLH        &kp PIPE        &kp LS(LBKT)   &kp LS(RBKT)   &kp DEL          &kp LA(LEFT)     &kp LA(F12)   &kp LA(RIGHT)     &none       &trans
+    &none       &kp APOS     &kp BSLH        &kp PIPE        &kp LS(LBKT)   &kp LS(RBKT)   &kp DEL          &kp LA(LEFT)     &kp LA(F12)   &kp LA(RIGHT)     &none       &none
                                              &none           &none          &none          &kp RSHFT        &trans           &kp RS(ENTER)
                         >;
                 };
@@ -182,7 +160,7 @@ label= "SYM1"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃  LALT $   ┃  LCTRL %  ┃  LGUI ^   ┃   ' = '   ┃   ┃     -     ┃     4     ┃     5     ┃     6     ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    TAB    ┃           ┃     !     ┃     @     ┃     #     ┃   ' -> '  ┃   ┃   BSPC    ┃     1     ┃     2     ┃     3     ┃           ┃    ESC    ┃
+// ┃           ┃           ┃     !     ┃     @     ┃     #     ┃   ' -> '  ┃   ┃   BSPC    ┃     1     ┃     2     ┃     3     ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃ SYM1_LOCK ┃           ┃     *     ┃   ┃  RSHFT ,  ┃     0     ┃     .     ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -191,7 +169,7 @@ label= "SYM1"                              ;
 
                 &none       &kp AMPS         &kp LS(N8)      &kp TILDE      &colon_sp     &kp ENTER   &kp N7      &kp N8      &kp N9      &none
                 &none       &ht LALT LS(N4)  &ht LCTRL PRCNT &ht LGUI CARET &equal_sp     &kp MINUS   &kp N4      &kp N5      &kp N6      &none
-    &trans      &none       &kp EXCL         &kp AT          &kp HASH       &arrow_sp     &kp BSPC    &kp N1      &kp N2      &kp N3      &none       &trans
+    &none       &none       &kp EXCL         &kp AT          &kp HASH       &arrow_sp     &kp BSPC    &kp N1      &kp N2      &kp N3      &none       &none
                                              &tog SYM1_LOCK  &none          &none     &mt RSHFT COMMA &kp N0      &kp DOT
                         >;
                 };
@@ -227,7 +205,7 @@ label= "SYM2"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃    LALT   ┃   LCTRL   ┃   LGUI    ┃           ┃   ┃    F11    ┃    F4     ┃     F5    ┃     F6    ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    TAB    ┃           ┃           ┃           ┃           ┃           ┃   ┃    F10    ┃    F1     ┃     F2    ┃     F3    ┃           ┃    ESC    ┃
+// ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃    F10    ┃    F1     ┃     F2    ┃     F3    ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃     *     ┃           ┃    BT     ┃   ┃   RSHIFT  ┃    BSPC   ┃   ENTER   ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -236,7 +214,7 @@ label= "SYM2"                              ;
 
                 &none       &none       &none       &none       &none           &kp F12     &kp F7      &kp F8      &kp F9      &none
                 &none       &kp LALT    &kp LCTRL   &kp LGUI    &none           &kp F11     &kp F4      &kp F5      &kp F6      &none
-    &trans      &none       &none       &none       &none       &none           &kp F10     &kp F1      &kp F2      &kp F3      &none       &trans
+    &none       &none       &none       &none       &none       &none           &kp F10     &kp F1      &kp F2      &kp F3      &none       &none
                                         &none       &none       &tog BT         &kp RSHFT   &trans      &trans
                         >;
                 };
@@ -252,7 +230,7 @@ label= "SYM3"                              ;
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 //             ┃           ┃   MLEFT   ┃   MDOWN   ┃   MRIGHT  ┃ SCRL_DOWN ┃   ┃           ┃   LCLK    ┃   RCTRL   ┃   RCLK    ┃           ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
-// ┃    TAB    ┃           ┃   SCRL_L  ┃   MCLK    ┃   SCRL_R  ┃SHFT_GUI_L ┃   ┃           ┃           ┃           ┃           ┃           ┃    ESC    ┃
+// ┃           ┃           ┃   SCRL_L  ┃   MCLK    ┃   SCRL_R  ┃SHFT_GUI_L ┃   ┃           ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                                     ┃           ┃           ┃           ┃   ┃     *     ┃           ┃           ┃
 //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -261,7 +239,7 @@ label= "SYM3"                              ;
 
                 &none       &mkp LCLK      &mmv MOVE_UP   &mkp RCLK       &msc SCRL_UP      &none       &none       &none       &none       &none
                 &none       &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_DOWN    &none       &mkp LCLK   &kp RCTRL   &mkp RCLK   &none
-    &trans      &none       &msc SCRL_LEFT &mkp MCLK      &msc SCRL_RIGHT &kp LS(LG(LEFT))  &none       &none       &none       &none       &none       &none
+    &none       &none       &msc SCRL_LEFT &mkp MCLK      &msc SCRL_RIGHT &kp LS(LG(LEFT))  &none       &none       &none       &none       &none       &none
                                            &none          &none           &none             &none       &none       &none
                         >;
                 };
